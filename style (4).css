@@ -1,0 +1,124 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:69px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar: logo and image*/
+/* #logo{
+    margin: 10px 34px;} */
+
+
+#logo img{
+    height: 90px;
+    margin:3px 6px;
+}
+ 
+
+
+/* Navigation Bar:List Styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(24, 19, 19);
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction:column;
+    padding:3px 200px ;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    
+    background-image: url(https://cdn.pixabay.com/photo/2021/10/11/17/37/doctor-6701410_960_720.jpg); 
+    background-size: cover;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+   
+}
+
+
+/* Utility class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px; 
+}
+.h-primary1{color: rgb(19, 27, 24);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.0rem;
+    padding: 12px; 
+}
+.h-primary2{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 2.5rem;
+    color: rgb(19, 27, 24);
+    padding: 12px; 
+}
+.btn{
+    padding:6px 20px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(197, 44, 161, 0.1), rgba(186, 42, 179, 0));
+    backdrop-filter: blur(120px);
+    -webkit-backdrop-filter: blur(120px);
+    
+    margin:17px ;
+    font-size: 1.8rem;
+    
+    cursor: pointer;
+
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+</head>
+
+<body>
+    <h2>Create E-Health Care ID</h2>
+    <form action="backend.php">
+        <!--put backend link-->
+        <h4>Personal Details</h4>
+
+        <div>
+            <label for="name">Name:</label>
+
+            <input type="text" name="Name" id="name">
+        </div>
+
+        <div>
+
+            Gender:Male <input type="radio" name="Gender" id=""> Female <input type="radio" name="Gender" id=""> Other
+            <input type="radio" name="Gender" id=""></div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="text" name="DOB" id="dob">
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age">
+
+        </div>
+
+        <h4>Contact Details</h4>
+        <div>
+            <label for="adress"> Address:</label>
+            <input type="text" name="Address" id="address">
+        </div>
+
+
+        <div>
+            <label for="district">District:</label>
+            <input type="text" name="District" id="district">
+
+            <label for="state">State:</label>
+            <input type="text" name="State" id="state">
+
+            <label for="pincode">Pincode:</label>
+            <input type="number" name="Pincode" id="pincode">
+        </div>
+        <div>
+            <label for="num1">Contact Number:</label>
+            <input type="tel" name="Num1" id="num1">
+        </div>
+        <div>
+            <label for="num2">Another Contact Number:</label>
+            <input type="tel" name="Num2" id="num2">
+        </div>
+        <div>
+            <label for="email"> Email:</label>
+            <input type="email" name="Email" id="email">
+        </div>
+
+
+
+
+        <h4>Medical Details</h4>
+
+        <div>
+            <label for="bloodgroup">Blood Group:</label>
+            <input type="text" name="Blood Group" id="bloodgroup"> 
+        </div>
+        <div>
+            <label for="disability">Disability:</label>
+            <input type="text" name="Disability" id="disability">
+        </div>
+
+        <div>Any Drug Allergy: Yes<input type="radio" name="Allergy" id=""> No<input type="radio" name="Allergy" id=""></div>
+
+        <div>
+            Allergy Details: <br><textarea name="Allergy" id="" cols="100" rows="10"></textarea>
+        </div>
+
+        <h4>Insurance Details</h4>
+        <div>
+        <label for="ic">Insurance Company:</label>
+        <input type="text" name="IC" id="ic"></div>
+        <div>
+
+        <label for="in">Insurance Number:</label>
+        <input type="number" name="IN" id="in"></div>
+
+
+        <h4>Choose Password</h4>
+        <div><label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" maxlength="8"></div>
+
+        <div><input type="submit" value="Submit Form"></div>
+        <div><input type="reset" value="Reset Form"></div>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.inside{position: relative;
+    justify-content: center;
+    display: flex;box-shadow: inset;
+
+}
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.back{display: flex;width: 100%;
+    min-height: 100vh;
+    }
+.back1{background-color: #98e1d45c ;flex: 1;}
+.back2{background-color: #0a050f;flex: 1;}
+.mail{margin: 60px;
+    width: 80%;
+    min-height: 80vh;
+    position:absolute;
+    display: flex;font-style: italic;box-shadow:0 0 20px #50ffbd;
+    background-color: rgba(244, 246, 246, 0.968);}
+    h1{font-size: 50px;}
+    h2{font-size: 35px;margin-top: 30%;margin-bottom: 15%;}
+    h3{font-size: 30px;margin-bottom: 10%;}
+    a{font-size: 20px;}
+
+    
